@@ -26,7 +26,7 @@ public class UserController {
        return ResponseEntity.status(HttpStatus.CREATED).body(user);
     }
 
-    @PostMapping("/{userId}")
+    @GetMapping("/{userId}")
     public ResponseEntity<User>getSingleUser(@PathVariable(name="userId") String userId) throws Throwable {
         User user=userService.getUserById(userId);
         return  ResponseEntity.status(HttpStatus.OK).body(user);
