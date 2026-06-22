@@ -3,6 +3,7 @@ package com.demo.UserService.UserService.models;
 import jakarta.persistence.*;
 import lombok.*;
 
+//import java.beans.Transient;
 import java.util.ArrayList;
 import java.util.List;
 
